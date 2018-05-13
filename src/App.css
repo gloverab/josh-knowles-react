@@ -1,13 +1,12 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: calc(100vh - 62px);
   margin: 0;
   background-color: black;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-
 
 h1, h2, h3, h4, h5, h6, ul {
   margin: 0;
@@ -82,7 +81,7 @@ header {
 
 .content-wrapper {
   width: 1000px;
-  height: 100vh;
+  height: calc(100vh - 62px);
   position: relative;
   display: block;
   margin: 0 auto;
@@ -312,6 +311,16 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+  .content-wrapper {
+    width: 100%;
+  }
+
+  .container .image-wrapper {
+    width: 100%;
+    top: 0px;
+    position: relative;
+  }
+
   h1 {
     font-size: 32px;
     letter-spacing: 3px;
@@ -319,17 +328,35 @@ header {
 
   .header-nav-nav {
     width: 100%;
+    height: 0;
+    overflow: hidden;
     position: absolute;
-    background-color: black;
+    background-color: rgba(0,0,0,0.95);
     left: 0;
     top: 62px;
     text-align: center;
     line-height: 42px;
+    transition: .3s ease all;
+  }
+
+  .header-nav-nav.expanded {
+    height: 100vh;
+  }
+
+  .header-nav-li.header-nav-li-nav {
+    width: 100%;
+    margin: 0 0;
+    padding: 3% 0;
   }
 
   .header-nav-li {
     margin: 0 7px;
     line-height: 42px;
+    font-size: 18px;
+  }
+
+  .header-nav-li a {
+    padding: 10px;
   }
 
   .main-container {
@@ -340,8 +367,18 @@ header {
     padding-top: 42px;
   }
 
-  .internal-container {
+  .videos-container {
     padding-top: 20px;
+  }
+
+  .music-links-wrapper {
+    position: relative;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .internal-container {
+    padding-top: 0;
   }
 
   .news-container {
@@ -350,7 +387,17 @@ header {
     bottom: 0;
     width: 100%;
     padding: 0;
+    min-height: 350px;
+    max-height: 350px;
     text-align: center;
+  }
+
+  .news-container.about {
+    position: relative;
+    width: 100%;
+  }
+  .image-wrapper {
+    position: relative;
   }
 
   .news-card {
