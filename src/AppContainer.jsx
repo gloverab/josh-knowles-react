@@ -3,6 +3,7 @@ import Header from './Header';
 import Home from './Home';
 import About from './About';
 import Music from './Music';
+import Shows from './Shows';
 import Video from './Video';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
@@ -16,6 +17,7 @@ export default function AppContainer(props) {
             <Switch>
               <Route path="/video" component={Video} />
               <Route path="/music" component={Music} />
+              <Route path="/shows" component={Shows} />
               <Route path="/" component={Home} />
             </Switch>
           </div>

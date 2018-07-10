@@ -33,7 +33,7 @@ export default class Header extends React.Component {
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/about'>About</Link></li>
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/video'>Video</Link></li>
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/music'>Music</Link></li>
-          <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><a href='#'>Shows</a></li>
+          <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/shows'>Shows</Link></li>
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/contact'>Contact</Link></li>
         </ul>
         <ul className='header-nav header-nav-social ib'>
