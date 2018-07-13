@@ -56,17 +56,17 @@ export default class Home extends React.Component {
           {!aboutPage && !contactPage && !this.state.hideText &&
             <Fragment>
               <div className='news-card'>
-                <h4 className='news-header'>Listen: <a href='#'>Spin Without A Sound <i className='fa fa-play'></i></a></h4>
+                <h4 className='news-header'>Listen: <a href='http://smarturl.it/w8sgbi' target='blank'>Spin Without A Sound <i className='fa fa-play'></i></a></h4>
                 <h4 className='news-subheader'>Electric violin album out now:</h4>
                 <ul className='news-list'>
-                  <li className='news-list-li'><a href='https://joshknowles.bandcamp.com/releases' target='blank'>Physical</a></li>
-                  <li className='news-list-li'><a href='#' target='blank'>Digital</a></li>
+                  <li className='news-list-li'><a href='https://joshknowles.bandcamp.com/releases' target='blank'><i className='fa fa-shopping-cart'></i>&nbsp;Physical</a></li>
+                  <li className='news-list-li'><a href='http://smarturl.it/w8sgbi' target='blank'><i className='fa fa-music'></i>&nbsp;Digital</a></li>
                 </ul>
               </div>
 
               <div className='news-card'>
-                <h4 className='news-header'>Watch: <a href='https://www.youtube.com/watch?v=92P4t0kXL0Y'>Ember <i className='fa fa-youtube-play'></i></a></h4>
-                <h4 className='news-subheader'>Live loop video performance of "Ember," the latest single from <a href='https://joshknowles.bandcamp.com/releases'>Spin Without A Sound</a></h4>
+                <h4 className='news-header'>Watch: <a href='https://www.youtube.com/watch?v=92P4t0kXL0Y' target='blank'>Ember <i className='fa fa-youtube-play'></i></a></h4>
+                <h4 className='news-subheader'>Live loop video performance of "Ember," the latest single from <a href='https://joshknowles.bandcamp.com/releases' target='blank'>Spin Without A Sound</a></h4>
               </div>
 
               <div className='news-card'>
