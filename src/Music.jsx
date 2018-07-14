@@ -21,9 +21,8 @@ export default class Music extends React.Component {
         <div className='internal-container'>
           <div className='container'>
             <div className='image-wrapper'>
-              <img src={window.location.origin + '/img/spin-without-a-sound-cover.jpg'} />
+              <img src='https://i.imgur.com/5RvwqJA.jpg' />
             </div>
-
             <div className='music-links-wrapper'>
               <div className='title-wrapper'>
                 <h2>Spin Without A Sound</h2>

@@ -87,7 +87,7 @@ export default class Home extends React.Component {
               </Fragment>}
           </div>
           <div className={`image-wrapper ${aboutPage ? '' : 'hide'}`}>
-            {<img src={window.location.origin + '/img/josh-beach-smile.jpg'} />}
+            <img src='https://i.imgur.com/1itLFSG.jpg' />
           </div>
         </div>
     )
