@@ -44,8 +44,11 @@ export default class Home extends React.Component {
       return (
         <Fragment>
           <h2>Contact</h2>
-          <p>Email: jaknowles320@gmail.com</p>
-          <p>Press: alex@birdlabrecords.com</p>
+          <p>Please feel free to get in touch!</p>
+          <p>Contact/Booking: <a href='mailto:jaknowles320@gmail.com'>jaknowles320@gmail.com</a></p>
+          <p>Press: <a href='mailto:alex@birdlabrecords.com'>alex@birdlabrecords.com</a></p>
+          <p>Facebook: <a href='http://www.facebook.com/joshknowlesmusic'>@joshknowlesmusic</a></p>
+          <p>Instagram: <a href='http://www.instagram.com/joshknowlesmusic'>@joshknowlesmusic</a></p>
         </Fragment>
       )
     }

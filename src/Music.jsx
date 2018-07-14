@@ -39,10 +39,10 @@ export default class Music extends React.Component {
                 </Fragment>}
               </div>
               <div className='music-links'>
-                <a href='#'>Bandcamp</a>
-                <a href='#'>Spotify</a>
-                <a href='#'>Apple Music</a>
-                <a href='#'>iTunes</a>
+                <a href='https://joshknowles.bandcamp.com/releases' target='blank'>Bandcamp</a>
+                <a href='https://open.spotify.com/album/2FG54Y9J7YxuQ5CnZiNUTX' target='blank'>Spotify</a>
+                <a href='https://itunes.apple.com/us/album/spin-without-a-sound/1347799058?app=music' target='blank'>Apple Music</a>
+                <a href='https://itunes.apple.com/us/album/spin-without-a-sound/1347799058?app=music' target='blank'>iTunes</a>
               </div>
             </div>
           </div>
