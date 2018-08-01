@@ -73,8 +73,8 @@ export default class Home extends React.Component {
               </div>
 
               <div className='news-card'>
-                <h4 className='news-header'>See: <a href='https://www.brownpapertickets.com/event/3384827'>5/9 @ Atwoods Tavern - Cambridge, MA</a></h4>
-                <h4 className='news-subheader'>Supporting <a href='https://www.facebook.com/themusicofhawthorn/' target='blank'>Hawthorne</a></h4>
+                <h4 className='news-header'>See: <a href='https://www.facebook.com/events/454530265020926/'>8/9 @ Isabella Stewart Gardner Museum - Boston, MA</a></h4>
+                <h4 className='news-subheader'>Performing in Calderwood Hall</h4>
               </div>
             </Fragment>}
             {aboutPage &&
