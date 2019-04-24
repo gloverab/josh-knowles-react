@@ -6,7 +6,14 @@ export default function Video(props) {
       <div className='internal-container'>
         <div className='video-card featured'>
           <h3>Featured Video:</h3>
-          <h1>Josh Knowles - Ember(live)</h1>
+          <h1>Josh Knowles - Same (Official Music Video feat. Boston Ballet)</h1>
+          <div className='video-wrapper'>
+            <iframe className='featured-vid' src="https://www.youtube.com/watch?v=_drI0UGkKZg" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          </div>
+        </div>
+
+        <div className='video-card video-card-other'>
+          <h2>Josh Knowles - Ember (Live Loop Performance)</h2>
           <div className='video-wrapper'>
             <iframe className='featured-vid' src="https://www.youtube.com/embed/92P4t0kXL0Y" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
           </div>

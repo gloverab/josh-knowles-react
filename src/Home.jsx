@@ -59,23 +59,23 @@ export default class Home extends React.Component {
           {!aboutPage && !contactPage && !this.state.hideText &&
             <Fragment>
               <div className='news-card'>
-                <h4 className='news-header'>Listen: <a href='http://smarturl.it/w8sgbi' target='blank'>Spin Without A Sound <i className='fa fa-play'></i></a></h4>
-                <h4 className='news-subheader'>Electric violin album out now:</h4>
+                <h4 className='news-header'>Listen: <a href='hyperurl.co/z3hrlw' target='blank'>Josh Knowles - Same <i className='fa fa-play'></i></a></h4>
+                <h4 className='news-subheader'>Debut single "Same" now streaming everywhere</h4>
                 <ul className='news-list'>
-                  <li className='news-list-li'><a href='https://joshknowles.bandcamp.com/releases' target='blank'><i className='fa fa-shopping-cart'></i>&nbsp;Physical</a></li>
-                  <li className='news-list-li'><a href='http://smarturl.it/w8sgbi' target='blank'><i className='fa fa-music'></i>&nbsp;Digital</a></li>
+                  <li className='news-list-li'><a href='https://open.spotify.com/track/1yEnmru0YziioqclSpLsDe?si=nJ91xo9gQeKR6GLE2VNxZQ' target='blank'><i className='fa fa-spotify'></i>&nbsp;Spotify</a></li>
+                  <li className='news-list-li'><a href='https://www.pointemagazine.com/dont-miss-boston-ballets-lia-cirio-and-paul-craig-in-this-new-music-video-2635415909.html' target='blank'><i className='fa fa-music'></i>&nbsp;Point Magazine Feature</a></li>
                 </ul>
               </div>
 
               <div className='news-card'>
-                <h4 className='news-header'>Watch: <a href='https://www.youtube.com/watch?v=92P4t0kXL0Y' target='blank'>Ember <i className='fa fa-youtube-play'></i></a></h4>
-                <h4 className='news-subheader'>Live loop video performance of "Ember," the latest single from <a href='https://joshknowles.bandcamp.com/releases' target='blank'>Spin Without A Sound</a></h4>
+                <h4 className='news-header'>Watch: <a href='https://www.youtube.com/watch?v=_drI0UGkKZg' target='blank'>Same <i className='fa fa-youtube-play'></i></a></h4>
+                <h4 className='news-subheader'>Music video for debut single "Same," featuring Boston Ballet <a href='https://joshknowles.bandcamp.com/releases' target='blank'>Spin Without A Sound</a></h4>
               </div>
 
-              <div className='news-card'>
+              {/*<div className='news-card'>
                 <h4 className='news-header'>See: <a href='https://www.facebook.com/events/252488168925250/'>11/11 @ Great Scott - Boston, MA</a></h4>
                 <h4 className='news-subheader'>Performing with Nemes and John Nolan</h4>
-              </div>
+              </div>*/}
             </Fragment>}
             {aboutPage &&
               <Fragment>
