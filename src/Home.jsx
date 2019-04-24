@@ -62,8 +62,7 @@ export default class Home extends React.Component {
                 <h4 className='news-header'>Listen: <a href='hyperurl.co/z3hrlw' target='blank'>Josh Knowles - Same <i className='fa fa-play'></i></a></h4>
                 <h4 className='news-subheader'>Debut single "Same" now streaming everywhere</h4>
                 <ul className='news-list'>
-                  <li className='news-list-li'><a href='https://open.spotify.com/track/1yEnmru0YziioqclSpLsDe?si=nJ91xo9gQeKR6GLE2VNxZQ' target='blank'><i className='fa fa-spotify'></i>&nbsp;Spotify</a></li>
-                  <li className='news-list-li'><a href='https://www.pointemagazine.com/dont-miss-boston-ballets-lia-cirio-and-paul-craig-in-this-new-music-video-2635415909.html' target='blank'><i className='fa fa-music'></i>&nbsp;Point Magazine Feature</a></li>
+                  <li className='news-list-li'><a href='https://www.pointemagazine.com/dont-miss-boston-ballets-lia-cirio-and-paul-craig-in-this-new-music-video-2635415909.html' target='blank'>&nbsp;<i className='fa fa-newspaper-o'></i>&nbsp;Same - Point Magazine Feature</a></li>
                 </ul>
               </div>
 
