@@ -8,7 +8,7 @@ export default function Video(props) {
           <h3>Featured Video:</h3>
           <h1>Josh Knowles - Same (Official Music Video feat. Boston Ballet)</h1>
           <div className='video-wrapper'>
-            <iframe className='featured-vid' src="https://www.youtube.com/watch?v=_drI0UGkKZg" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+            <iframe className='featured-vid' src="https://www.youtube.com/embed/_drI0UGkKZg" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
           </div>
         </div>
 

@@ -59,16 +59,27 @@ export default class Home extends React.Component {
           {!aboutPage && !contactPage && !this.state.hideText &&
             <Fragment>
               <div className='news-card'>
-                <h4 className='news-header'>Listen: <a href='hyperurl.co/z3hrlw' target='blank'>Josh Knowles - Same <i className='fa fa-play'></i></a></h4>
-                <h4 className='news-subheader'>Debut single "Same" now streaming everywhere</h4>
+                <h4 className='news-header'>See: <a href='https://festivalballetprovidence.org/2019-2020-season/game-changers/' target='blank'>Gamechangers - Feb 7-9</a></h4>
+                <h4 className='news-subheader'>Josh Knowles performing live with Providence Festival Ballet</h4>
                 <ul className='news-list'>
-                  <li className='news-list-li'><a href='https://www.pointemagazine.com/dont-miss-boston-ballets-lia-cirio-and-paul-craig-in-this-new-music-video-2635415909.html' target='blank'>&nbsp;<i className='fa fa-newspaper-o'></i>&nbsp;Same - Point Magazine Feature</a></li>
+                  <li className='news-list-li'><a href='https://festivalballetprovidence.org/2019-2020-season/game-changers/' target='blank'>&nbsp;<i className='fa fa-newspaper-o'></i>&nbsp;&nbsp;Click for more information</a></li>
+                </ul>
+              </div>
+
+              <div className='news-card'>
+                <h4 className='news-header'>Listen: <a href='http://hyperurl.co/kuqkig' target='blank'>Josh Knowles - Boxes <i className='fa fa-play'></i></a></h4>
+                <h4 className='news-subheader'>Brand new single "Boxes" now streaming everywhere</h4>
+                <ul className='news-list'>
+                  <li className='news-list-li'><a href='http://hyperurl.co/kuqkig' target='blank'>&nbsp;<i className='fa fa-spotify'></i>&nbsp;&nbsp;Boxes - Listen now</a></li>
                 </ul>
               </div>
 
               <div className='news-card'>
                 <h4 className='news-header'>Watch: <a href='https://www.youtube.com/watch?v=_drI0UGkKZg' target='blank'>Same <i className='fa fa-youtube-play'></i></a></h4>
-                <h4 className='news-subheader'>Music video for debut single "Same," featuring Boston Ballet <a href='https://joshknowles.bandcamp.com/releases' target='blank'>Spin Without A Sound</a></h4>
+                <h4 className='news-subheader'>Music video for debut single "Same," featuring Boston Ballet</h4>
+                <ul className='news-list'>
+                  <li className='news-list-li'><a href='https://www.youtube.com/watch?v=_drI0UGkKZg' target='blank'>&nbsp;<i className='fa fa-camera'></i>&nbsp;&nbsp;Same - Watch now</a></li>
+                </ul>
               </div>
 
               {/*<div className='news-card'>

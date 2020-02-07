@@ -67,6 +67,21 @@ header {
   margin: 0 auto;
 }
 
+.music-release-wrapper {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.music-release-wrapper .image-wrapper {
+  position: relative;
+}
+
+.music-release-wrapper .music-links-wrapper {
+  position: relative;
+}
+
 .container .image-wrapper {
   top: 30px;
   width: 50%;
