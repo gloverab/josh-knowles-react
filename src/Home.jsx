@@ -32,11 +32,10 @@ export default class Home extends React.Component {
     const aboutText = () => {
         return (<Fragment>
             <h2>Josh Knowles</h2>
-            <p>Josh Knowles is a violinist, singer/songwriter, and composer based in Boston, MA. Formerly educated at Berklee College of Music, he brings an eclectic array of influences to his work. He has trained from the age of four as a classical violinist and is continually striving to fuse his traditional foundation with a myriad of contemporary styles.</p>
-
-            <p>Knowles is also a musical artist and poet for Cirio Collective and Boston Ballet, with whom he has appeared on stage for historic runs at the Boston Opera House and the Lincoln Center in New York. He first collaborated with the Collective in 2015, and shortly after was asked to arrange the music and perform alongside violist Anna Stromer for Cirio Collective's piece, "Efil Ym Fo Flah", which premiered at the Vineyard Arts Project in summer 2016. He currently resides as a Community Luminary at the Isabella Stewart Gardner Museum, where he performs regularly.</p>
-
-            <p>In February of 2018, Knowles released "Spin Without A Sound," his debut album of instrumental solo electric violin pieces. Largely recorded live, each of the original compositions is built on loops and improvisations spawned entirely from sounds created by the violin, manipulated by multiple effect pedals. Riding the line somewhere between contemporary new age and alternative classical, the result is both symphonic and electronic, unique in its combination of melodic foundation and technical prowess.</p>
+            <p>Josh Knowles is a violinist, singer/songwriter, and composer based in Boston, MA who was trained from the age of four as a classical violinist and formerly educated at Berklee College of Music. He brings an eclectic array of influences to his work, continually striving to fuse his traditional foundation with experimental studio production and stunning live performances.</p>
+            <p>Knowles is also a recurring collaborator with Cirio Collective and Boston Ballet, with whom he has appeared on stage for historic runs at the Boston Opera House and the Lincoln Center in New York. He currently resides as a Community Luminary at the Isabella Stewart Gardner Museum, where he performs regularly.</p>
+            <p>In February of 2018, Knowles released "Spin Without A Sound," his debut album of instrumental solo electric violin pieces . Largely recorded live, each of the original compositions is built on loops and improvisations spawned entirely from sounds created by the violin, manipulated by multiple effect pedals.</p>
+            <p>He built on this foundation in summer 2019 with breakthrough single "Same," which incorporated his signature electric violin tones but also showcased his prowess as a songwriter and vocalist. A unique and cathartic ballad, "Same" has garnered nearly 100,000 plays on Spotify and will appear Knowles' upcoming full length album, due out in mid 2020.</p>
           </Fragment>)
     }
 
