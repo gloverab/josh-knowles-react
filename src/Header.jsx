@@ -6,10 +6,24 @@ export default class Header extends React.Component {
     super(props)
 
     this.state = {
-      expandableNav: window.innerWidth < 420
+      smallScreen: window.innerWidth < 700,
+      menuExpanded: false
     }
 
     this.expandMenu = this.expandMenu.bind(this)
+    this.updateDimensions = this.updateDimensions.bind(this)
+  }
+
+  updateDimensions() {
+    if (window.innerWidth < 700) {
+      this.setState({ smallScreen: true })
+    } else if (window.innerWidth >= 700) {
+      this.setState({ smallScreen: false })
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions)
   }
 
   expandMenu() {
@@ -18,15 +32,22 @@ export default class Header extends React.Component {
     })
   }
 
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions);
+  }
+
   render() {
+    const windowWidth = window.innerWidth
     return (
       <header>
-        {!this.state.expandableNav &&
+        {!this.state.smallScreen &&
           <h2 className='title ib'><Link to='/'>Josh Knowles</Link></h2>}
-        {this.state.expandableNav &&
+        {this.state.smallScreen &&
           <h2 className='title ib' onClick={this.expandMenu}><i className='fa fa-bars'></i></h2>}
+          {this.state.smallScreen &&
+            <h2 className='title ib'><Link to='/'>Josh Knowles</Link></h2>}
         <ul className={`header-nav header-nav-nav ib ${this.state.menuExpanded ? 'expanded' : ''}`}>
-          {this.state.expandableNav &&
+          {this.state.smallScreen &&
             <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}>
               <Link to='/'><h2>Josh Knowles</h2></Link>
             </li>}
@@ -34,6 +55,7 @@ export default class Header extends React.Component {
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/video'>Video</Link></li>
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/music'>Music</Link></li>
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/shows'>Shows</Link></li>
+          <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/epk'>Press</Link></li>
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/contact'>Contact</Link></li>
         </ul>
         <ul className='header-nav header-nav-social ib'>
