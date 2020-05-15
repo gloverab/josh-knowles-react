@@ -335,6 +335,10 @@ header {
   text-align: center;
 }
 
+.image-wrapper.sm {
+  width: 400px;
+}
+
 .music-links-wrapper .title-wrapper h2 {
   font-size: 32px;
 }
