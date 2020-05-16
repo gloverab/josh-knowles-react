@@ -59,6 +59,8 @@ export default class Header extends React.Component {
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/contact'>Contact</Link></li>
         </ul>
         <ul className='header-nav header-nav-social ib'>
+          {this.state.smallScreen && <li className='header-nav-li header-nav-social-li ib'><a href='https://music.apple.com/us/artist/josh-knowles/635148421'><i className='fa fa-apple'></i></a></li>}
+          {this.state.smallScreen && <li className='header-nav-li header-nav-social-li ib'><a href='https://open.spotify.com/artist/2cYJgCe7KbXn1Y4TL0JCrK?si=cMotAAjRSsO0C6EJOyymZw'><i className='fa fa-spotify'></i></a></li>}
           <li className='header-nav-li header-nav-social-li ib'><a href='https://www.facebook.com/joshknowlesmusic'><i className='fa fa-facebook'></i></a></li>
           <li className='header-nav-li header-nav-social-li ib'><a href='https://www.twitter.com/joshnemes'><i className='fa fa-twitter'></i></a></li>
           <li className='header-nav-li header-nav-social-li ib'><a href='https://www.instagram.com/joshnemes'><i className='fa fa-instagram'></i></a></li>

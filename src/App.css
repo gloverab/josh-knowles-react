@@ -1,6 +1,7 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
   width: 100vw;
+  max-width:100%;
   height: calc(100vh - 62px);
   margin: 0;
   background-color: black;
@@ -114,6 +115,7 @@ header {
 
 .content-wrapper.noscroll {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .title {
@@ -448,10 +450,6 @@ header {
     display: block;
   }
 
-  .image-wrapper.sm {
-    top: 30px;
-  }
-
   .music-links-wrapper {
     position: relative;
     width: 100%;
@@ -469,15 +467,16 @@ header {
     bottom: 0;
     width: 100%;
     padding: 0;
-    min-height: 350px;
-    max-height: 350px;
-    text-align: center;
+    min-height: none;
+    max-height: none;
     margin-right: 0;
   }
 
   .news-container.about {
     position: relative;
     width: 100%;
+    overflow: scroll;
+    text-overflow: wrap;
   }
   .image-wrapper {
     position: relative;
@@ -520,6 +519,10 @@ header {
 
   .video-card-other {
     margin-top: 20px;
+  }
+
+  .music-links {
+    margin-top: 15px;
   }
 }
 

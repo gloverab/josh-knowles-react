@@ -5,14 +5,32 @@ export default class Music extends React.Component {
     super(props)
 
     this.state = {
-      expandText: false
+      expandText: false,
+      smallScreen: window.innerWidth < 700
     }
 
     this.expandText = this.expandText.bind(this)
+    this.updateDimensions = this.updateDimensions.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions)
   }
 
   expandText() {
     this.setState({ expandText: !this.state.expandText })
+  }
+
+  updateDimensions() {
+    if (window.innerWidth < 700) {
+      this.setState({ smallScreen: true })
+    } else if (window.innerWidth >= 700) {
+      this.setState({ smallScreen: false })
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions);
   }
 
   render() {
@@ -27,6 +45,9 @@ export default class Music extends React.Component {
                   <h2>Boxes - Single</h2>
                   <h4>Released Feb 7, 2020</h4>
                 </div>
+                {this.state.smallScreen && <div className='image-wrapper sm'>
+                <img src='https://i.imgur.com/5BmnBNZ.png' />
+                </div>}
                 <div className='text-wrapper'>
                   <p>Boxes was premiered live onstage alongside Festival Ballet Providence</p>
                 </div>
@@ -37,15 +58,15 @@ export default class Music extends React.Component {
                   <a href='https://music.apple.com/us/album/boxes-single/1497640073' target='blank'>iTunes</a>
                 </div>
               </div>
-              <div className='image-wrapper sm'>
+              {!this.state.smallScreen && <div className='image-wrapper sm'>
                 <img src='https://i.imgur.com/5BmnBNZ.png' />
-              </div>
+              </div>}
             </div>
 
             <div className='music-release-wrapper'>
-              <div className='image-wrapper sm'>
+              {!this.state.smallScreen && <div className='image-wrapper sm'>
                 <img src='https://i.imgur.com/oAfkWjn.jpg' />
-              </div>
+              </div>}
               <div className='music-links-wrapper'>
                 <div className='title-wrapper'>
                   <h2>Thrown Stone - Single</h2>
@@ -53,6 +74,9 @@ export default class Music extends React.Component {
                 </div>
                 <div className='text-wrapper'>
                 </div>
+                {this.state.smallScreen && <div className='image-wrapper sm'>
+                <img src='https://i.imgur.com/oAfkWjn.jpg' />
+              </div>}
                 <div className='music-links'>
                   <a href='https://joshknowles.bandcamp.com/track/throne-stone' target='blank'>Bandcamp</a>
                   <a href='https://open.spotify.com/track/1EuAAuA8p81uigHNO17J8N?si=8Rb4mLtbTdW9ZePFTxXx1w' target='blank'>Spotify</a>
@@ -70,6 +94,9 @@ export default class Music extends React.Component {
                 </div>
                 <div className='text-wrapper'>
                 </div>
+                {this.state.smallScreen && <div className='image-wrapper sm'>
+                  <img src='https://i.imgur.com/m7g6Dfi.jpg' />
+                </div>}
                 <div className='music-links'>
                   <a href='https://joshknowles.bandcamp.com/track/same' target='blank'>Bandcamp</a>
                   <a href='https://open.spotify.com/track/1yEnmru0YziioqclSpLsDe?si=eiMCfJubRdCBwVcmlmwRYA' target='blank'>Spotify</a>
@@ -77,20 +104,23 @@ export default class Music extends React.Component {
                   <a href='https://www.youtube.com/watch?v=_drI0UGkKZg' target='blank'>Youtube</a>
                 </div>
               </div>
-              <div className='image-wrapper sm'>
+             {!this.state.smallScreen && <div className='image-wrapper sm'>
                 <img src='https://i.imgur.com/m7g6Dfi.jpg' />
-              </div>
+              </div>}
             </div>
 
             <div className='music-release-wrapper'>
-              <div className='image-wrapper sm'>
+              {!this.state.smallScreen && <div className='image-wrapper sm'>
                 <img src='https://i.imgur.com/5RvwqJA.jpg' />
-              </div>
+              </div>}
               <div className='music-links-wrapper'>
                 <div className='title-wrapper'>
                   <h2>Spin Without A Sound</h2>
                   <h4>Released Feb 19, 2018</h4>
                 </div>
+                {this.state.smallScreen && <div className='image-wrapper sm'>
+                  <img src='https://i.imgur.com/5RvwqJA.jpg' />
+                </div>}
                 <div className='text-wrapper'>
                   <p>It’s not often that a singular room influences an entire body of musical work, but in the case of Josh Knowles’ debut solo electric violin album “Spin Without A Sound,” the inspiration is palpable. Conceived over the course of several marathon performances in the courtyard of Boston’s Isabella Stewart Gardner Museum, “Spin Without A Sound” captures the sonic soul that the architectural tour-de-force bears, transporting the listener back to Knowles’ performances within the museum walls. {!this.state.expandText && <a className='more' onClick={this.expandText}>more...</a>}</p>
 

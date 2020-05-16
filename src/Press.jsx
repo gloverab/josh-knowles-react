@@ -30,7 +30,7 @@ export default function Press() {
           <p className='strip'><span className='bold'>Facebook: </span><a className='link' href='https://facebook.com/joshknowlesmusic' target='_blank'>https://www.facebook.com/joshknowlesmusic</a></p>
           <p className='strip'><span className='bold'>Instagram: </span><a className='link' href='https://instagram.com/joshknowlesmusic' target='_blank'>@joshknowlesmusic</a></p>
           <p className='strip'><span className='bold'>YouTube: </span><a className='link' href='https://www.youtube.com/channel/UCRiNextM-ExZS7S3qGNTxbw' target='_blank'>​Josh Knowles on YouTube</a></p>
-          <p className='strip'><span className='bold'>Spotify: </span><a className='https://open.spotify.com/artist/2cYJgCe7KbXn1Y4TL0JCrK' href='lllll' target='_blank'> osh Knowles on Spotify</a></p>
+          <p className='strip'><span className='bold'>Spotify: </span><a className='link' href='https://open.spotify.com/artist/2cYJgCe7KbXn1Y4TL0JCrK' target='_blank'>Josh Knowles on Spotify</a></p>
           <p className='strip'><span className='bold'>Apple Music/iTunes: </span><a className='link' href='https://music.apple.com/us/artist/josh-knowles/635148421' target='_blank'>J​osh Knowles on Apple Music</a></p>
           <p className='strip'><span className='bold'>Bandcamp: </span><a className='link' href='https://joshknowles.bandcamp.com' target='_blank'>Josh Knowles on Bandcamp</a></p>
         </div>
