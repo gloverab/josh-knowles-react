@@ -223,7 +223,7 @@ header {
 }
 
 .news-container.about {
-  width: 500px;
+  width: 50%;
   font-size: 14px;
   line-height: 1.7;
   text-overflow: hidden;
@@ -363,11 +363,19 @@ header {
   .header-nav-li-nav a {
     padding: 10px;
   }
+  .image-wrapper {
+    height: 500px;
+    margin-left: 20px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .header-nav-social-li a {
     padding: 10px;
+  }
+  .image-wrapper {
+    height: 400px;
+    margin-left: 20px;
   }
 }
 
@@ -411,13 +419,15 @@ header {
   }
 
   .header-nav-nav.expanded {
+    position: absolute;
     height: 100vh;
+    z-index: 100;
   }
 
   .header-nav-li.header-nav-li-nav {
     width: 100%;
     margin: 0 0;
-    padding: 3% 0;
+    padding: 1.5% 0;
   }
 
   .header-nav-li {
@@ -477,6 +487,9 @@ header {
     width: 100%;
     overflow: scroll;
     text-overflow: wrap;
+    max-height: 100%;
+    min-height: 100%;
+    padding: 15px;
   }
   .image-wrapper {
     position: relative;

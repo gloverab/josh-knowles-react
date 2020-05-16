@@ -51,6 +51,7 @@ export default class Header extends React.Component {
             <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}>
               <Link to='/'><h2>Josh Knowles</h2></Link>
             </li>}
+          {this.state.smallScreen && <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/'>Home</Link></li>}
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/about'>About</Link></li>
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/video'>Video</Link></li>
           <li className='header-nav-li header-nav-li-nav ib' onClick={this.expandMenu}><Link to='/music'>Music</Link></li>
