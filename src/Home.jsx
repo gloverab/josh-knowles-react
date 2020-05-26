@@ -59,19 +59,12 @@ export default class Home extends React.Component {
         <div className={`news-container ${aboutPage ? 'about' : ''} ${contactPage ? 'contact' : ''}`}>
           {!aboutPage && !contactPage && !this.state.hideText &&
             <Fragment>
-              <div className='news-card'>
-                <h4 className='news-header'>See: <a href='https://festivalballetprovidence.org/2019-2020-season/game-changers/' target='blank'>Gamechangers - Feb 7-9</a></h4>
-                <h4 className='news-subheader'>Josh Knowles performing live with Providence Festival Ballet</h4>
-                <ul className='news-list'>
-                  <li className='news-list-li'><a href='https://festivalballetprovidence.org/2019-2020-season/game-changers/' target='blank'>&nbsp;<i className='fa fa-newspaper-o'></i>&nbsp;&nbsp;Click for more information</a></li>
-                </ul>
-              </div>
 
               <div className='news-card'>
-                <h4 className='news-header'>Listen: <a href='http://hyperurl.co/kuqkig' target='blank'>Josh Knowles - Boxes <i className='fa fa-play'></i></a></h4>
-                <h4 className='news-subheader'>Brand new single "Boxes" now streaming everywhere</h4>
+                <h4 className='news-header'>Listen: <a href='http://hyperurl.co/kuqkig' target='blank'>Josh Knowles - How Deep the Dark <i className='fa fa-play'></i></a></h4>
+                <h4 className='news-subheader'>Brand new single "How Deep the Dark" now streaming everywhere</h4>
                 <ul className='news-list'>
-                  <li className='news-list-li'><a href='http://hyperurl.co/kuqkig' target='blank'>&nbsp;<i className='fa fa-spotify'></i>&nbsp;&nbsp;Boxes - Listen now</a></li>
+                  <li className='news-list-li'><a href='http://hyperurl.co/ikgu7k' target='blank'>&nbsp;<i className='fa fa-spotify'></i>&nbsp;&nbsp;How Deep the Dark - Listen now</a></li>
                 </ul>
               </div>
 

@@ -212,8 +212,8 @@ header {
   position: absolute;
   padding: 15px;
   width: 330px;
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 220px;
+  max-height: 220px;
   right: 0;
   top: 100px;
   color: white;
