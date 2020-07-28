@@ -61,10 +61,12 @@ export default class Home extends React.Component {
             <Fragment>
 
               <div className='news-card'>
-                <h4 className='news-header'>Listen: <a href='http://hyperurl.co/kuqkig' target='blank'>Josh Knowles - How Deep the Dark <i className='fa fa-play'></i></a></h4>
-                <h4 className='news-subheader'>Brand new single "How Deep the Dark" now streaming everywhere</h4>
+                <h4><span className='news-header'>Listen:&nbsp;&nbsp;</span><a href='http://hyperurl.co/6b8h6x' target='blank'>Orchestral EP "A Step Back From the Wrong Direction" now streaming everywhere</a></h4>
+                <h4 className='news-subheader'></h4>
                 <ul className='news-list'>
-                  <li className='news-list-li'><a href='http://hyperurl.co/ikgu7k' target='blank'>&nbsp;<i className='fa fa-spotify'></i>&nbsp;&nbsp;How Deep the Dark - Listen now</a></li>
+                  <li className='news-list-li'><a href='http://hyperurl.co/6b8h6x' target='blank'>&nbsp;<i className='fa fa-spotify'></i>&nbsp;&nbsp;Listen on Spotify&nbsp;&nbsp;<i className='fa fa-play'></i></a></li>
+                  <li className='news-list-li'><a href='https://apple.co/30U8Gh0' target='blank'>&nbsp;<i className='fa fa-apple'></i>&nbsp;&nbsp;Listen on Apple Music/iTunes&nbsp;&nbsp;<i className='fa fa-play'></i></a></li>
+                  <li className='news-list-li'><a href='https://bit.ly/3gbcAs0' target='blank'>&nbsp;<i className='fa fa-headphones'></i>&nbsp;&nbsp;Buy it on 12" vinyl&nbsp;&nbsp;<i className='fa fa-long-arrow-right'></i></a></li>
                 </ul>
               </div>
 
